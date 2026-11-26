@@ -9,7 +9,8 @@ using KL.Utils;
 namespace AutoUnlockDoors {
     /// <summary>
     /// Stardeus keeps door locks as plain DoorComp.State changes - no Harmony needed.
-    /// This system sweeps every game tick and immediately unlocks any locked door.
+    /// This system sweeps every game tick and immediately unlocks any locked door,
+    /// and switches any switched-off machine back on.
     /// Covers player locks, the mental-breakdown "Lockdown" action, and copied configs.
     /// </summary>
     public sealed class AutoUnlockDoorsSys : GameSystem {
@@ -33,6 +34,12 @@ namespace AutoUnlockDoors {
 
         private void OnTick(long ticks) {
             if (ticks % ScanIntervalTicks != 0) { return; }
+
+            UnlockDoors();
+            TurnOnMachines();
+        }
+
+        private void UnlockDoors() {
             var doors = S.Components.AllByType<DoorComp>();
             if (doors == null) { return; }
 
@@ -40,6 +47,18 @@ namespace AutoUnlockDoors {
                 if (comp is DoorComp door && door.IsLocked && door.Tile != null) {
                     door.Unlock(false);
                 }
+            }
+        }
+
+        private void TurnOnMachines() {
+            var nodes = S.Components.AllByType<ElectricNodeComp>();
+            if (nodes == null) { return; }
+
+            foreach (var comp in nodes) {
+                if (!(comp is ElectricNodeComp node)) { continue; }
+                if (node.Obj == null || !node.Obj.IsActive) { continue; }
+                if (!node.IsSwitchable || !node.IsReachable || node.IsSwitchedOn) { continue; }
+                node.Switch(true, false);
             }
         }
     }

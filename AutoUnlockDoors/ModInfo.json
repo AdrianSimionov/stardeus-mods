@@ -2,7 +2,7 @@
     "Id": "AutoUnlockDoors",
     "SteamWorkshop": false,
     "Name": "Auto Unlock Doors",
-    "Description": "Every 60 game ticks, automatically unlocks any door that is locked, including doors locked by the mental-breakdown Lockdown action. No Harmony and no Rosetta required.",
-    "ModVersion": "1.0.2",
+    "Description": "Every 60 game ticks, automatically unlocks any door that is locked and switches any switched-off machine back on, including doors locked by the mental-breakdown Lockdown action. No Harmony and no Rosetta required.",
+    "ModVersion": "1.1.0",
     "GameVersion": "0.15.23"
 }

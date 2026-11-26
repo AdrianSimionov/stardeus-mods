@@ -12,7 +12,7 @@ These are unofficial mods. Back up your saves before installing.
 | --- | --- | --- |
 | [AutoAllowGroundItems](#autoallowgrounditems) | 1.0.2 | Clears the Forbid flag on loose items and material piles. |
 | [AutoRebuildMiner](#autorebuildminer) | 1.0.1 | Queues a normal rebuild blueprint when an Autodrill Rig is picked up. |
-| [AutoUnlockDoors](#autounlockdoors) | 1.0.2 | Unlocks any locked door, including lockdown-locked doors. |
+| [AutoUnlockDoors](#autounlockdoors) | 1.1.0 | Unlocks any locked door and turns switched-off machines back on. |
 | [NoAutoForbid](#noautoforbid) | 1.3.1 | Stops the game auto-forbidding dropped/stripped/derelict/space loot. |
 | [QuietWarp](#quietwarp) | 1.0.1 | Removes the "wait for Copters" hyperjump warning. |
 | [ReplenishingDeposits](#replenishingdeposits) | 1.0.1 | Resource deposits slowly refill depth while idle. |
@@ -83,7 +83,8 @@ materials and builder work.
 ### AutoUnlockDoors
 
 Every 60 game ticks, automatically unlocks any door that is locked, including
-doors locked by the mental-breakdown **Lockdown** action.
+doors locked by the mental-breakdown **Lockdown** action, and switches any
+switchable machine that was turned off back on.
 
 ### NoAutoForbid
 
