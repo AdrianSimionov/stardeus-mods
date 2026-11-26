@@ -1,0 +1,8 @@
+{
+    "Id": "AutoAllowGroundItems",
+    "SteamWorkshop": false,
+    "Name": "Auto Allow Ground Items",
+    "Description": "Automatically clears the Forbid flag on items and material piles lying on the ground, so they can be hauled. Checks every 60 game ticks (1 game hour). Does not touch items in storage or being carried. No Harmony and no Rosetta required.",
+    "ModVersion": "1.0.2",
+    "GameVersion": "0.15.23"
+}

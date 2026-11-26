@@ -1,0 +1,8 @@
+{
+    "Id": "StasisArrayNoLimit",
+    "SteamWorkshop": false,
+    "Name": "Stasis Array No Sleeper Limit",
+    "Description": "Removes the 15-sleeper cap from the Derelict Ship With Stasis Array story event, so the event can still appear after you already have 15 or more sleepers. All other requirements remain unchanged.",
+    "ModVersion": "1.0.1",
+    "GameVersion": "0.15.23"
+}

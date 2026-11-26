@@ -1,0 +1,8 @@
+{
+    "Id": "HarmonyAppleSiliconFix",
+    "SteamWorkshop": false,
+    "Name": "Harmony Apple Silicon Fix",
+    "Description": "Restores Harmony/MonoMod patching on native Apple Silicon macOS. Stardeus 0.15.14+ upgraded to Unity 6000.6, whose Mono runtime uses MAP_JIT pages that MonoMod's mprotect-based detours cannot write (mprotect returned EACCES). This mod applies the AppleSiliconHarmony W^X patch (pthread_jit_write_protect_np via a native helper) before any mod patches Harmony. Load it and all Harmony-based mods work on arm64 without Rosetta. Remove this mod to revert.",
+    "ModVersion": "1.0.0",
+    "GameVersion": "0.15.23"
+}

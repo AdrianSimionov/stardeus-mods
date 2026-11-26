@@ -1,0 +1,6 @@
+{
+    "_readme": "RefillKmPerDay: km of depth restored per in-game day while a deposit is idle. Set 0 to disable. IdleHoursBeforeRefill: hours without any mining before refill starts; 0 means refill continuously. ResetDifficultyOnFullRefill: restore the deposit's base mining difficulty when depth reaches 0.",
+    "RefillKmPerDay": 5.0,
+    "IdleHoursBeforeRefill": 6,
+    "ResetDifficultyOnFullRefill": true
+}

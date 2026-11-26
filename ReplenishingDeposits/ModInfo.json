@@ -1,0 +1,8 @@
+{
+    "Id": "ReplenishingDeposits",
+    "SteamWorkshop": false,
+    "Name": "Replenishing Deposits",
+    "Description": "Resource deposits slowly restore their depth while idle, so mining does not permanently stop when a drill or shuttle reaches its maximum depth. Refill speed and idle delay are configurable in Config.json.",
+    "ModVersion": "1.0.1",
+    "GameVersion": "0.15.23"
+}

@@ -1,0 +1,8 @@
+{
+    "Id": "QuietWarp",
+    "SteamWorkshop": false,
+    "Name": "Quiet Warp",
+    "Description": "Removes the 'wait for Copters' warp warning. Warp is still queued immediately and starts automatically once all copter missions, including mining-drill deployments, have finished. Other warp blockers still show their warnings.",
+    "ModVersion": "1.0.1",
+    "GameVersion": "0.15.23"
+}

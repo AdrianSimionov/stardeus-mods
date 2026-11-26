@@ -1,0 +1,8 @@
+{
+    "Id": "AutoRebuildMiner",
+    "SteamWorkshop": false,
+    "Name": "Auto Rebuild Miner",
+    "Description": "When an Autodrill Rig is picked up for deployment, automatically queues a normal rebuild blueprint at the same spot. The replacement costs the normal materials and builder work.",
+    "ModVersion": "1.0.1",
+    "GameVersion": "0.15.23"
+}

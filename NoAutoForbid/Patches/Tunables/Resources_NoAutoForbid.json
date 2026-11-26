@@ -1,0 +1,9 @@
+{
+    "target" : "Config/Tunable/Resources.json",
+    "operations" : [
+        { "op" : "replace", "path" : "/Bools[Key=AutoForbidDroppedWeapons]/Bool", "value" : false },
+        { "op" : "replace", "path" : "/Bools[Key=AutoForbidDerelictResources]/Bool", "value" : false },
+        { "op" : "replace", "path" : "/Bools[Key=AutoForbidSpaceBodyLoot]/Bool", "value" : false },
+        { "op" : "replace", "path" : "/Bools[Key=AutoForbidStrippedEquipment]/Bool", "value" : false }
+    ]
+}
