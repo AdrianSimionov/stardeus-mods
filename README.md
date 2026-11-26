@@ -29,7 +29,7 @@ These are unofficial mods. Back up your saves before installing.
    - Do **not** install into the game's `Stardeus.app/Contents/Resources/...
      /StreamingAssets/Mods` folder. That one is for official mods only.
 3. Download the release zip(s) for the mods you want from the
-   [Releases](../../releases) page.
+   [Releases](https://github.com/AdrianSimionov/stardeus-mods/releases) page.
 4. Extract each zip so the mod folder sits **directly** under `Mods/`, for
    example:
 
